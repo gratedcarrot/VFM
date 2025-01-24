@@ -164,6 +164,8 @@
                 <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
                 <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+		<li class="nav-item"><button class="btn btn-light me-2" id="signin-btn" data-bs-toggle="modal" data-bs-target="#signinModal">Sign 			In</button></li>
+
                 <li class="nav-item"><button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</button></li>
             </ul>
         </div>
@@ -260,7 +262,7 @@
             <div class="col-md-4">
                 <blockquote class="blockquote">
                     <p>"The freshest produce I've ever had! Highly recommend this service."</p>
-                    <footer class="blockquote-footer">Aryan Paode</footer>
+                    <footer class="blockquote-footer">Aryan Paode </footer>
                 </blockquote>
             </div>
             <div class="col-md-4">
@@ -278,6 +280,35 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="signin-form">
+                    <div class="mb-3">
+                        <label for="signin-email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="signin-email" name="email" required>
+                        <small id="signin-email-error" class="text-danger"></small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signin-password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="signin-password" name="password" required minlength="6">
+                        <small id="signin-password-error" class="text-danger"></small>
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign In</button>
+                </form>
+                <hr>
+                <p class="text-center">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
     <div class="modal-dialog">
