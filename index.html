@@ -308,6 +308,46 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="mb-3">
+                        <label for="register-name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="register-name" name="name" required>
+                        <small id="register-name-error" class="text-danger"></small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="register-email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="register-email" name="email" required>
+                        <small id="register-email-error" class="text-danger"></small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="register-mobile" class="form-label">Mobile Number</label>
+                        <input type="text" class="form-control" id="register-mobile" name="mobile" required pattern="\d{10}" title="Enter a valid 10-digit mobile number">
+                        <small id="register-mobile-error" class="text-danger"></small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="register-address" class="form-label">Address</label>
+                        <textarea class="form-control" id="register-address" name="address" required></textarea>
+                        <small id="register-address-error" class="text-danger"></small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="register-pincode" class="form-label">PIN Code</label>
+                        <input type="text" class="form-control" id="register-pincode" name="pincode" required pattern="\d{6}" title="Enter a valid 6-digit PIN code">
+                        <small id="register-pincode-error" class="text-danger"></small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
